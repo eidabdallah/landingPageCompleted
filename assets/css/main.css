@@ -10,6 +10,12 @@ body {
     background-color: #FFF;
     padding: 20px 0;
 }
+.menu{
+    display: none;
+    border: solid 2px black;
+    padding: 10px;
+
+}
 
 .header .logo {
     display: flex;
@@ -58,3 +64,28 @@ body {
    background-color: var(--mainColor);
    border: 2px solid var(--mainColor);
 }
+
+/* media hearder */
+@media screen and (max-width: 992px) {
+    .nav ,.auth{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container{
+        width: calc(100% - 50px);
+    }
+    .header .logo img{
+        width: 20px;
+    }
+    .header .logo a{
+        font-size: 14px;
+    }
+}
+
+/* End header */ 
+
+/* Footer Section */
