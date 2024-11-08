@@ -3,7 +3,6 @@
 body {
     font-family: var(--mainFont);
     background: rgba(255, 255, 255, 1);
-
 }
 
 /* Header Section */
@@ -103,37 +102,347 @@ body {
 
 /* End header */
 
+/* HOME SECTION */
+.home {
+    padding: 40px 0;
+}
+
+.home .row {
+    gap: 40px;
+}
+
+.home-content,
+.homepic {
+    width: calc((100% - 40px) / 2);
+    align-self: flex-start;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.home-content p:first-of-type {
+    color: var(--mainColor);
+}
+
+.home-content p:first-of-type span {
+    display: block;
+    font-weight: 600;
+    color: var(--mainColor);
+}
+
+.home-content h1 {
+    font-size: 80px;
+}
+
+.home-content h1 span {
+    color: var(--mainColor);
+}
+
+.home-content p:last-of-type {
+    color: rgba(150, 150, 150, 1);
+}
+
+.home-content .RegisterWithPlay {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.RegisterWithPlay .register {
+    color: #FFF;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    font-family: var(--subFont);
+    border-radius: 10px;
+    padding: 9px 30px;
+}
+
+.homepic img {
+    width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    .home .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-content,
+    .homepic {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 60px;
+    }
+
+    .RegisterWithPlay .register {
+        padding: 8px 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home {
+        padding: 20px 0;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content {
+        gap: 8px;
+    }
+
+    .homepic img {
+        width: 100%;
+    }
+
+    .RegisterWithPlay .register {
+        padding: 6px 20px;
+    }
+}
+/* end home  */
+
+/* start info  */
+.info {
+    background: rgba(245, 245, 245, 1);
+    padding: 150px 0;
+}
+
+.info .row {
+    gap: 30px;
+}
+
+.info-content,
+.cards {
+    width: calc((100% - 30px) / 2);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-content p:first-of-type {
+    color: var(--mainColor);
+    font-size: 22px;
+}
+
+.info-content h1 {
+    font-size: 40px;
+}
+
+.info-content p:last-of-type {
+    color: rgba(150, 150, 150, 1);
+}
+
+.info .cards .row {
+    gap: 20px;
+}
+
+.info .cards .row .card {
+    width: calc(( 100% - 40px ) / 3);
+    background: var(--mainColor);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 30px 22px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.info .cards .row .card i {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: gold;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.info .cards .row .card p:first-of-type{
+    font-size: 14px;
+}
+.info .cards .row .card p:last-of-type{
+    font-size: 10px;
+}
+@media screen and (max-width: 992px) {
+    .info-content,
+    .cards {
+        width: 100%;
+    }
+
+    .info-content h1 {
+        font-size: 32px;
+    }
+
+    .info .cards .row .card {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info {
+        padding: 80px 0;
+    }
+
+    .info-content h1 {
+        font-size: 28px;
+    }
+
+    .info-content p:first-of-type {
+        font-size: 18px;
+    }
+
+    .info .cards .row .card {
+        width: 100%; 
+        padding: 20px 15px;
+    }
+
+    .info .cards .row .card p:first-of-type {
+        font-size: 12px;
+    }
+
+    .info .cards .row .card p:last-of-type {
+        font-size: 9px;
+    }
+}
+/* end info */
+
+/*   */
+.SelectedCourse{
+    background: linear-gradient(180deg, #545BE8 0%, #272DB0 100%);
+    padding: 25px 0;
+}
+.SelectedCourse .row{
+    gap: 30px;
+}
+.startSide , .endSide{
+    width: calc((100% - 30px) / 2);
+}
+.startSide img{
+    width: 80%;
+}
+.endSide {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+}
+.endSide p:first-of-type{
+    color: rgba(240, 201, 50, 1);
+}
+
+.endSide span{
+    font-size: 14px;
+}
+.number{
+    display: flex;
+    justify-content: space-between;
+}
+.views{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.views span:first-of-type{
+    color: rgba(240, 201, 50, 1);
+}
+@media screen and (max-width: 992px) {
+    .startSide, 
+    .endSide {
+        width: 100%;
+    }
+
+    .startSide img {
+        width: 70%;
+    }
+
+    .endSide span {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .SelectedCourse {
+        padding: 15px 0;
+    }
+
+    .startSide img {
+        width: 100%;
+    }
+
+    .endSide {
+        gap: 20px;
+    }
+
+    .endSide span {
+        font-size: 11px;
+    }
+
+    .number {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .views span:first-of-type {
+        font-size: 16px;
+    }
+}
+/*   */
 /* Courses Section */
 
-.courses{
+.courses {
     padding: 50px 0;
 }
+
 .courses .row {
     gap: 8px;
 }
+
 .courses-items,
 .course-description {
     width: calc((100% - 40px) / 2);
 }
+
 .courses-items {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .course {
     width: calc((100% - 20px) / 2);
     color: #fff;
     box-shadow: 0px 7.44px 7.44px 0px rgba(0, 0, 0, 0.05);
     border-radius: 5%;
 }
+
 .course img {
     width: 100%;
     filter: brightness(70%);
     display: flex;
 }
-.course-card{
+
+.course-card {
     position: relative;
 }
+
 .course-info {
     position: absolute;
     top: 0;
@@ -145,44 +454,54 @@ body {
     padding: 20px;
     align-items: flex-start;
 }
+
 .course-info span:first-of-type {
     background-color: var(--mainColor);
     padding: 10px;
 }
+
 .course-info span:last-of-type {
     align-self: flex-end;
 }
-.course-details{
-    color :black;
+
+.course-details {
+    color: black;
     padding: 10px;
-    
+
 }
-.course-details h2{
+
+.course-details h2 {
     font-size: 20px;
 }
-.course-details .row:nth-child(1) span{
-    color : var(--mainColor);
+
+.course-details .row:nth-child(1) span {
+    color: var(--mainColor);
     font-size: 13px;
 }
-.course-details .row:nth-child(2){
+
+.course-details .row:nth-child(2) {
     justify-content: flex-start;
-    color : rgba(150, 150, 150, 1);
+    color: rgba(150, 150, 150, 1);
     font-size: 15px;
 }
-.course-description{
+
+.course-description {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-self:flex-start
+    align-self: flex-start
 }
-.course-description p:first-of-type{
+
+.course-description p:first-of-type {
     color: var(--mainColor);
     font-family: var(--subFont);
 }
-.course-description p:last-of-type{
+
+.course-description p:last-of-type {
     color: rgba(150, 150, 150, 1);
 }
-.course-description a{
+
+.course-description a {
     color: white;
     background-color: var(--mainColor);
     padding: 4px 50px;
@@ -190,12 +509,53 @@ body {
     border-radius: 5px;
     align-self: flex-start;
 }
-/* media courses */
-@media screen and (max-width: px) {
-    .testimonial {
+@media screen and (max-width: 992px) {
+    .courses-items,
+    .course-description {
+        width: 100%;
+    }
+
+    .course {
+        width: 100%;
+    }
+
+    .course-description p:first-of-type,
+    .course-details h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .courses {
+        padding: 30px 0;
+    }
+
+    .course-description p:first-of-type {
+        font-size: 16px;
+    }
+
+    .course-description p:last-of-type {
+        font-size: 14px;
+    }
+
+    .course-description a {
+        padding: 4px 30px;
+    }
+
+    .course-details h2 {
+        font-size: 18px;
+    }
+
+    .course-info span:first-of-type {
+        padding: 8px;
+    }
+
+    .course {
         width: 100%;
     }
 }
+
+
 /* End courses */
 
 
@@ -214,7 +574,6 @@ body {
     padding: 20px;
     box-sizing: border-box;
     width: calc((100% - 40px) / 2);
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 10px;
